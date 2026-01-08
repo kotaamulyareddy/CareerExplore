@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL = process.env.REACT_APP_API_URL || "https://careerexplore.onrender.com";
+const API_URL ="https://careerexplore.onrender.com";
 
 export default function Reset() {
   const [email, setEmail] = useState("");
