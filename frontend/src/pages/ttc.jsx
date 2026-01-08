@@ -10,7 +10,7 @@ export default function TTC() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/ttc")
+      .get("https://careerexplore.onrender.com/api/ttc")
       .then((res) => {
         if (Array.isArray(res.data)) {
           setStartups(res.data);

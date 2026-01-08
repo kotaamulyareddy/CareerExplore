@@ -11,7 +11,7 @@ export default function CareerCourses() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/careers");
+        const res = await axios.get("https://careerexplore.onrender.com/api/careers");
         setCourses(res.data);
       } catch (err) {
         console.error("Error fetching careers:", err);

@@ -10,7 +10,7 @@ export default function CollegeVita() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/collegevita")
+      .get("https://careerexplore.onrender.com/api/collegevita")
       .then((res) => {
         if (Array.isArray(res.data)) {
           setColleges(res.data);
