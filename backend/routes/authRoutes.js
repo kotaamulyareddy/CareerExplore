@@ -35,4 +35,21 @@ router.post("/login", async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 });
+router.post("/reset", async (req, res) => {
+  try {
+    const { email, newPassword } = req.body;
+
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    user.password = newPassword;
+    await user.save();
+
+    res.json({ message: "Password reset successful" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
 module.exports = router;
