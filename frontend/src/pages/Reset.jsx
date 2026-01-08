@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL ="https://careerexplore.onrender.com";
-
 export default function Reset() {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -19,7 +17,7 @@ export default function Reset() {
       return;
     }
  try {
-      const res = await fetch(`${API_URL}/api/auth/reset`, {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/reset`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, newPassword }),
