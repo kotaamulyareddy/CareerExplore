@@ -1,0 +1,93 @@
+.career-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+.career-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  width: 320px;
+  padding: 22px;
+  border-radius: 18px;
+  color: #000;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.career-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+}
+
+.career-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.partner {
+  font-size: 14px;
+  color: #3d43ff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.career-info,
+.rating,
+.skills {
+  margin-top: 10px;
+}
+
+.career-info p,
+.rating,
+.skills li {
+  font-size: 13px;
+  margin: 4px 0;
+}
+.skills ul {
+  padding-left: 18px;
+  margin-top: 6px;
+}
+.career-card button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.btn-purple {
+  background: #9f2fff;
+}
+@media (max-width: 768px) {
+  .career-card {
+    width: 90%;
+  }
+}
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  width: 260px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.filter-select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}

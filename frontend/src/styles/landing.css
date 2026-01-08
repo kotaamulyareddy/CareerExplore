@@ -1,0 +1,188 @@
+.landing-bg {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  color: #111;
+}
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 60px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-image {
+  height: 42px;    
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+.header-actions {
+  display: flex;
+  gap: 20px;
+}
+.link-btn {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.primary-btn {
+  padding: 10px 22px;
+  border-radius: 22px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.announcement-bar {
+  width: 100%;
+  background: #e8f0fe;         
+  border-bottom: 1px solid #d2e3fc;
+  padding: 10px 20px;
+  text-align: center;
+}
+.announcement-bar p {
+  font-size: 14px;
+  color: #1f1f1f;
+}
+
+.announcement-bar span {
+  color: #1a73e8;             
+  font-weight: 500;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.hero-split {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.hero-left {
+  flex: 1;
+  text-align: left;
+}
+.badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: rgba(108, 99, 255, 0.1);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.hero-title {
+  font-size: 56px;
+  font-weight: 800;
+}
+.hero-subtitle {
+  font-size: 44px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #6aa9ff, #c77dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-desc {
+  margin-top: 18px;
+  max-width: 520px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.cta-btn {
+  margin-top: 28px;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4c6fff, #9f2fff);
+  color: white;
+  cursor: pointer;
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-image {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 28px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+.modules {
+  margin-top: 120px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 80px;
+  flex-wrap: wrap;
+}
+.module-card {
+  width: 320px;
+  height: 420px;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.module-card:hover {
+  transform: translateY(-8px);
+}
+.module-image {
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.module-content {
+  padding: 22px;
+}
+.module-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.module-content p {
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+.collegevita-img {
+  background-image: url("/public/college.jpeg");
+}
+.ttc-img {
+  background-image: url("/public/ttc.jpg");
+}
+.fyc-img {
+  background-image: url("/public/fyc.jpeg");
+}
+.landing-footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .hero-split {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left {
+    text-align: center;
+  }
+  .hero-desc {
+    margin: auto;
+  }
+}

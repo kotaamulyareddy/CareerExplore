@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bg, .auth-bg {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login-card,
+.auth-card,
+.reset-card {
+    background: #ffffff;
+    padding: 40px;
+    width: 350px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    color: #333;
+}
+
+.auth-card.wide {
+    width: 420px;
+}
+.logo-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg,#3D43FF,#9F2FFF);
+    border-radius: 15px;
+    margin: auto;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.auth-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    background: #f2f2f2;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.orange { background:#9f2fff; color:white; }
+.purple { background:#9F2FFF; color:white; }
+h2 {
+    text-align: center;
+    margin: 20px 0 10px;
+    color: #222;
+}
+.subtext,
+.auth-subtext,
+.msg {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+.input-box,
+.auth-input {
+    background: #f2f2f2;
+    border-radius: 10px;
+    margin-top: 6px;
+    padding: 12px;
+}
+.input-box input,
+.auth-input input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #333;
+    outline: none;
+}
+.back-link {
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+    color: #3D43FF;
+    text-decoration: none;
+}
+.btn,
+.auth-btn,
+.reset-btn {
+    display: block;            
+    width: 100%;               
+    margin-top: 14px;            
+    padding: 12px 0;
+    background: #9F2FFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+.btn {
+    background: linear-gradient(45deg,#3D43FF,#9F2FFF);
+}
+.orange-btn { background:#9f2fff; }
+.purple-btn { background:#9F2FFF; }
+.signup,
+.auth-bottom-text {
+    margin-top: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: #555;
+}
+.auth-bottom-text a {
+    color: #3D43FF;
+    text-decoration: none;
+}
+.header {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: #222;
+}
+.logo {
+    background: linear-gradient(45deg,#3D43FF,#9F2FFF);
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+.profile {
+    width: 45px;
+    height: 45px;
+    background: url("https://i.ibb.co/3Mp5K4G/avatar.jpg") center/cover;
+    border-radius: 50%;
+}
+.main-title {
+    font-size: 40px;
+    color: #222;
+    margin-top: 80px;
+    text-align: center;
+}
+.main-title span {
+    color: #8e6fff;
+}
+.subtitle {
+    color: #555;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.card-container {
+    display: flex;
+    gap: 25px;
+}
+.card {
+    background: #ffffff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #222;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    color: white;
+}
+.btn-blue { background:#227cf5; }
+.btn-purple { background:#9F2FFF; }
+.btn-green { background:#18b56a; }
+.mail-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
