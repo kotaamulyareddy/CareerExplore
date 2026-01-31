@@ -9,7 +9,6 @@ export default function Dashboard() {
   return (
     <div className="bg">
       <Header />
-
       <div className="dashboard-content">
         <h2 className="main-title">
           Student <span>Dashboard</span>

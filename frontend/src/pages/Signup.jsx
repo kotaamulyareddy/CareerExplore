@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import "../styles/landing.css";
 export default function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -58,7 +58,36 @@ export default function Signup() {
   }
 };
   return (
+    <>
     <div className="auth-bg">
+<header className="landing-header auth-navbar">
+  <div className="logo-area">
+    <button
+      onClick={() => navigate(-1)}
+      className="back-btn"
+    >
+      ←
+    </button>
+
+    <img
+      src="/caplogo.jpg"
+      alt="Career Explore Logo"
+      className="logo-image"
+    />
+    <span className="logo-text">Career Explore</span>
+  </div>
+
+  <div className="header-actions">
+    <button className="primary-btn" onClick={() => navigate("/about")}>
+      About Us
+    </button>
+
+    <button className="primary-btn" onClick={() => navigate("/contact")}>
+      Contact Us
+    </button>
+  </div>
+</header>
+
       <div className="auth-card wide">
         {/* Logo */}
         <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
@@ -113,6 +142,53 @@ export default function Signup() {
         </p>
       </div>
     </div>
+
+      {/* FOOTER */}
+      <footer className="career-footer">
+        <div className="footer-top">
+          <div className="footer-brand">
+            <img src="/caplogo.jpg" alt="Career Explore" className="footer-logo" />
+            <p className="footer-desc">
+              Career Explore is a unified platform helping students manage academics,
+              discover careers, and connect with opportunities.
+            </p>
+
+            <p className="footer-contact">
+              <strong>Email:</strong> support@careerexplore.in <br />
+              <strong>Phone:</strong> +91 98765 43210
+            </p>
+          </div>
+
+          <div className="footer-col">
+            <h4>ABOUT US</h4>
+            <a href="/about">Overview</a>
+            <a href="/about">Why Career Explore</a>
+            <a href="/about">Our Journey</a>
+            <a href="/about">Leadership</a>
+          </div>
+
+          <div className="footer-col">
+            <h4>PLATFORM</h4>
+            <a href="/landing">CollegeVita</a>
+            <a href="/landing">TTC</a>
+            <a href="">Find Your Career</a>
+            <a href="#">AI Career Tools</a>
+          </div>
+
+          <div className="footer-col">
+            <h4>RESOURCES</h4>
+            <a href="#">News</a>
+            <a href="/contact">Reports</a>
+            <a href="/contact">Help Center</a>
+            <a href="/contact">Contact Us</a>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>© {new Date().getFullYear()} Career Explore. All rights reserved.</p>
+        </div>
+      </footer>
+    </>
   );
 }
 

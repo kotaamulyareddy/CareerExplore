@@ -4,18 +4,29 @@ import "../styles/header.css";
 export default function Header() {
   const navigate = useNavigate();
   return (
-    <nav className="navbar">
-      <div className="nav-left">
-        <h2 className="logo">Career Explore</h2>
-      </div>
-      <div className="nav-right">
+    <header className="landing-header auth-navbar">
+      <div className="logo-area">
         <button
-          className="logout-btn"
+          className="back-btn"
+          onClick={() => navigate(-1)}
+        >
+          ←
+        </button>
+         <img
+          src="/caplogo.jpg"
+          alt="Career Explore Logo"
+          className="logo-image"
+        />
+        <span className="logo-text">Career Explore</span>
+      </div>
+     <div className="header-actions">
+        <button
+          className="primary-btn logout-btn"
           onClick={() => navigate("/login")}
         >
           Logout
         </button>
       </div>
-    </nav>
+    </header>
   );
 }

@@ -18,14 +18,23 @@ export default function Landing() {
 </div>
 
 
-        <div className="header-actions">
-          <button className="link-btn" onClick={() => navigate("/login")}>
-            Sign In
-          </button>
-          <button className="primary-btn" onClick={() => navigate("/signup")}>
-            Get Started
-          </button>
-        </div>
+       <div className="header-actions">
+  <button className="link-btn" onClick={() => navigate("/about")}>
+    About Us
+  </button>
+
+  <button className="link-btn" onClick={() => navigate("/contact")}>
+    Contact Us
+  </button>
+
+  <button className="link-btn" onClick={() => navigate("/login")}>
+    Sign In
+  </button>
+
+  <button className="primary-btn" onClick={() => navigate("/signup")}>
+    Get Started
+  </button>
+</div>
       </header>
 <div className="announcement-bar">
   <p>
@@ -100,9 +109,56 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <footer className="landing-footer">
-        © {new Date().getFullYear()} College Vita. All rights reserved.
-      </footer>
+     <footer className="career-footer">
+  <div className="footer-top">
+    {/* Left section */}
+    <div className="footer-brand">
+      <img src="/caplogo.jpg" alt="Career Explore" className="footer-logo" />
+      <p className="footer-desc">
+        Career Explore is a unified platform helping students manage academics,
+        discover careers, and connect with opportunities.
+      </p>
+
+      <p className="footer-contact">
+        <strong>Email:</strong> support@careerexplore.in <br />
+        <strong>Phone:</strong> +91 98765 43210
+      </p>
+    </div>
+
+    {/* Column 1 */}
+    <div className="footer-col">
+      <h4>ABOUT US</h4>
+      <a href="/about">Overview</a>
+      <a href="/about">Why Career Explore</a>
+      <a href="/about">Our Journey</a>
+      <a href="/about">Leadership</a>
+    </div>
+
+    {/* Column 2 */}
+    <div className="footer-col">
+      <h4>PLATFORM</h4>
+      <a href="/signup">CollegeVita</a>
+      <a href="/signup">TTC</a>
+      <a href="/signup">Find Your Career</a>
+      <a href="#">AI Career Tools</a>
+    </div>
+
+    {/* Column 3 */}
+    <div className="footer-col">
+      <h4>RESOURCES</h4>
+      <a href="/contact">News</a>
+      <a href="/contact">Reports</a>
+      <a href="/contact">Help Center</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+  </div>
+
+  {/* Bottom bar */}
+  <div className="footer-bottom">
+    <p>© {new Date().getFullYear()} Career Explore. All rights reserved.</p>
+  </div>
+</footer>
+
     </div>
   );
 }

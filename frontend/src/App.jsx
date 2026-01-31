@@ -9,6 +9,9 @@ import Dashboard from "./pages/Dashboard";
 import CollegeVita from "./pages/collegevita";
 import Career from "./pages/fyc";
 import TTC from "./pages/ttc";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
 function App() {
   return (
     <Routes>
@@ -21,6 +24,9 @@ function App() {
       <Route path="/collegevita" element={<CollegeVita />} />
       <Route path="/fyc" element={<Career />} />
       <Route path="/ttc" element={<TTC />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+
     </Routes>
   );
 }
