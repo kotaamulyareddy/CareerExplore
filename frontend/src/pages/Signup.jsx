@@ -171,13 +171,13 @@ export default function Signup() {
             <h4>PLATFORM</h4>
             <a href="/landing">CollegeVita</a>
             <a href="/landing">TTC</a>
-            <a href="">Find Your Career</a>
-            <a href="#">AI Career Tools</a>
+            <a href="/career">Find Your Career</a>
+            <a href="/about">AI Career Tools</a>
           </div>
 
           <div className="footer-col">
             <h4>RESOURCES</h4>
-            <a href="#">News</a>
+            <a href="/contact">News</a>
             <a href="/contact">Reports</a>
             <a href="/contact">Help Center</a>
             <a href="/contact">Contact Us</a>
