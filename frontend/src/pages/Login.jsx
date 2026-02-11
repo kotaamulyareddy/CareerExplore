@@ -30,7 +30,7 @@ export default function Login() {
         throw new Error(text || "Login failed");
       }
 
-      const data = JSON.parse(text);
+      JSON.parse(text); 
       alert("Login successful");
       navigate("/dashboard");
     } catch (error) {
