@@ -14,6 +14,7 @@ export default function Login() {
     }
 
     try {
+      console.log("After api")
       const res = await fetch(
         `${process.env.REACT_APP_API_URL}/api/auth/login`,
         {
@@ -22,7 +23,6 @@ export default function Login() {
           body: JSON.stringify({ email, password }),
         }
       );
-
       const text = await res.text();
 
       if (!res.ok) {
@@ -34,7 +34,7 @@ export default function Login() {
       navigate("/dashboard");
     } catch (error) {
       console.error(error);
-      alert("Login failed: Enter the correct credentials");
+      alert("login failed msg"+(error.message || "something went wrong"));
     }
   };
 
