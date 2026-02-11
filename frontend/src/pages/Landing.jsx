@@ -140,7 +140,7 @@ export default function Landing() {
       <a href="/signup">CollegeVita</a>
       <a href="/signup">TTC</a>
       <a href="/signup">Find Your Career</a>
-      <a href="#">AI Career Tools</a>
+      <a href="/about">AI Career Tools</a>
     </div>
 
     {/* Column 3 */}
